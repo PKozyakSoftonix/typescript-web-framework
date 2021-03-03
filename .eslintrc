@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "semi": [2, "always"],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "max-len": ["error", { "code": 120, "ignoreUrls": true, "ignoreComments": true,  "ignoreStrings": true}],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "indent": ["error", 2, {"SwitchCase": 1}]
+  }
+}
